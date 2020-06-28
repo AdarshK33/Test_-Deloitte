@@ -1722,7 +1722,7 @@ body {
 --------------------------------------*/
 
 .footer-copyright {
-    background: rgba(0, 122, 207, .4);
+    background: #6e79bdc4;
     padding: 0 0 60px;
     border-top: 2px solid black;
 }
@@ -1788,10 +1788,12 @@ body {
 
 .single-footer-txt p {
     margin-bottom: 8px;
+    text-align: justify;
+    color: white;
 }
 
 .single-footer-txt p a {
-    color: #565a5c;
+    color: white;
     font-size: 16px;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -1813,7 +1815,7 @@ body {
 /*single-footer-txt*/
 
 .footer-copyright hr {
-    border-top: 1px solid black;
+    border-top: 1px solid white;
 }
 
 
@@ -1924,9 +1926,12 @@ body {
     border-radius: 50%;
 }
 
-.ex,
-.panel {
+.ex {
     margin-top: 30px;
+}
+
+.panel {
+    margin: 19px;
 }
 
 .main-content {
