@@ -171,7 +171,7 @@ body {
 .is-sticky .header-area:after {
     position: absolute;
     content: '';
-    background: #6e79bd;
+    background: #1e217b;
     height: 100%;
     width: 100%;
     top: 0;
@@ -1722,7 +1722,7 @@ body {
 --------------------------------------*/
 
 .footer-copyright {
-    background: #6e79bdc4;
+    background: #293580c4;
     padding: 0 0 60px;
     border-top: 2px solid black;
 }
@@ -1936,6 +1936,51 @@ body {
 
 .main-content {
     margin-bottom: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 92%;
+    transition: .5s ease;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* adarsh */
+
+
+/* mob */
+
+@media only screen and (min-width:320px) and (max-width:400px) {
+    .logo a img {
+        max-width: 80%;
+    }
+}
+
+
+/* tab */
+
+@media only screen and (min-width:500px) {
+    .logo a img {
+        max-width: 100%;
+    }
+}
+
+
+/* laptop */
+
+@media screen and (min-width: 1100px) {
+    .logo a img {
+        max-width: 100%;
+    }
 }
 
 
