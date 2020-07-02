@@ -108,6 +108,10 @@ ul li {
     list-style: none;
 }
 
+.a li {
+    list-style: circle!important;
+}
+
 select,
 input,
 textarea,
@@ -270,7 +274,7 @@ body {
 }
 
 .panel-heading-Studies h4 {
-    color: blue;
+    color: #2d90d1;
 }
 
 .btn-sm {
@@ -385,6 +389,10 @@ body {
 /*-------------------------------------
 		3. 	About
 --------------------------------------*/
+
+.text_aboutus {
+    margin-bottom: 10px;
+}
 
 .about-us {
     display: flex;
