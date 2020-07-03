@@ -105,7 +105,7 @@
         background: white;
     }
     .sticky-wrapper .navbar-collapse.collapse.in {
-        background: rgba(77, 78, 84, 1);
+        background: white;
         width: 112%;
         margin-left: -14px;
         padding-left: 27px;

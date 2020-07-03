@@ -1977,6 +1977,10 @@ body {
     .overlay {
         width: 91%;
     }
+    .foot-icons .footer-social-links li {
+        padding: 0 5px!important;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width:400px) and (max-width:450px) {
@@ -2013,6 +2017,39 @@ body {
     .logo a img {
         max-width: 100%;
     }
+    .overlay {
+        width: 92%;
+    }
+    .change_height {
+        height: 240px!important;
+    }
+}
+
+
+/* ipad pro */
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .overlay {
+        width: 90%;
+    }
+    .change_height {
+        height: 200px!important;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .overlay {
+        width: 90%;
+    }
+    .change_height {
+        height: 200px!important;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
     .overlay {
         width: 92%;
     }
