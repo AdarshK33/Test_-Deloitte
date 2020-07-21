@@ -102,10 +102,12 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    color: #666666;
 }
 
 ul li {
     list-style: none;
+    color: #666666;
 }
 
 .a li {
@@ -1963,6 +1965,23 @@ body {
 
 .service1_heading {
     padding-top: 15px;
+}
+
+.service2_heading h4 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.panel-heading-Studies h3 {
+    color: #2d90d1;
+}
+
+.Contact_us p {
+    padding-bottom: 15px;
+}
+
+.Contact_us {
+    padding-top: 25px!important;
 }
 
 
