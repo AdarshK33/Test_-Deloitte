@@ -288,6 +288,13 @@ font-family: 'Poppins', sans-serif;
         background-color: transparent;
     }
     
+    .main-menu .nav .dropdown li.active a,
+    .main-menu .nav .dropdown li a:hover,
+    .main-menu .nav .dropdown li a:focus {
+        color: #00d8ff;
+        background-color: transparent;
+    }
+    
     .main-menu .nav a:before {
         position: absolute;
         content: "";
