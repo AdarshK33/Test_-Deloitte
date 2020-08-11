@@ -1757,6 +1757,15 @@ font-family: 'Poppins', sans-serif;
         font-size: 16px;
         margin-top: 28px;
     }
+    /* update copyright */
+    
+    .foot-icons p a :hover {
+        color: #00d8ff !important;
+    }
+    
+    .digitalmagic:hover {
+        color: #00d8ff !important;
+    }
     /*foot-icons*/
     /*===============================
          Scroll Top
