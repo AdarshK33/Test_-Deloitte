@@ -1742,7 +1742,7 @@ body {
 --------------------------------------*/
 
 .footer-copyright {
-    background: #d6e9f3;
+    background: black;
     padding: 0 0 20px;
     border-top: 2px solid black;
 }
@@ -1760,7 +1760,7 @@ body {
 }
 
 .single-footer-item h2 {
-    color: black!important;
+    color: white!important;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -1820,11 +1820,11 @@ body {
 .single-footer-txt p {
     margin-bottom: 8px;
     text-align: justify;
-    color: black;
+    color: white;
 }
 
 .single-footer-txt p a {
-    color: black;
+    color: white;
     font-size: 16px;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -1846,7 +1846,7 @@ body {
 /*single-footer-txt*/
 
 .footer-copyright hr {
-    border-top: 1px solid black;
+    border-top: 1px solid white;
 }
 
 
