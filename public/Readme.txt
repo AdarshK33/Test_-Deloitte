@@ -1,4 +1,6 @@
+Thanks for downloading this template!
 
-Web Name: siAus
-Author:siAus
-License:
+Template Name: Green
+Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/

@@ -1,8 +1,8 @@
 /**
-* Web Name: siAus
-* Web URL:siAus
-* Author: siAus
-* License: siAus
+* Template Name: Green - v4.10.0
+* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
 */
 
 /*--------------------------------------------------------------
@@ -136,7 +136,7 @@ h6 {
 }
 /* logo change and style */
 #header .logo img {
-  max-height: 110px;
+  max-height: 65px;
   mix-blend-mode: multiply;
   border-radius: 100%;
 }
@@ -387,7 +387,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   background-color: rgba(9, 9, 9, 0.8);
   overflow: hidden;
   position: relative;
@@ -407,14 +407,13 @@ h6 {
   bottom: 0;
 }
 
-#hero .carousel-item::before {
+/* #hero .carousel-item::before {
   content: "";
-  /* background-color: rgba(45, 103, 60, 0.8); */
   background-color: #05123b;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23050734'/%3E%3Cstop offset='1' stop-color='%23050734' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23070c31'/%3E%3Cstop offset='1' stop-color='%23070c31' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2309062b'/%3E%3Cstop offset='1' stop-color='%2309062b' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2305123B'/%3E%3Cstop offset='1' stop-color='%2305123B' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230A042E'/%3E%3Cstop offset='1' stop-color='%230A042E' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23080828'/%3E%3Cstop offset='1' stop-color='%23080828' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-}
+}*/
 
 #hero .carousel-container {
   display: flex;
@@ -470,10 +469,12 @@ h6 {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: rgb(138, 131, 180);
   border-radius: 50px;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: rgb(255, 255, 255);
   width: 54px;
   height: 54px;
   display: flex;
@@ -483,8 +484,10 @@ h6 {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8); */
+  background: rgba(81, 4, 224, 0.925);
+  color: rgb(252, 248, 248);
 }
 
 #hero .carousel-indicators li {
@@ -501,7 +504,8 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #5cb874;
+  /* background: #5cb874; */
+  background: rgb(55, 0, 255);
 }
 
 #hero .btn-get-started {
@@ -510,18 +514,20 @@ h6 {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 36px;
   border-radius: 4px;
   transition: 0.5s;
   line-height: 1;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  background: #5cb874;
+  background: #18a141dc;
+  margin-top: 280px;
 }
 
 #hero .btn-get-started:hover {
-  background: #6ec083;
+  /* background: #6ec083; */
+  background: #2603be;
 }
 
 @media (max-width: 992px) {
