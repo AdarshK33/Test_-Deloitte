@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook Photo Upload Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input[type="text"], input[type="number"] {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    .flex-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .photo-input {
+      margin-bottom: 5px;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+    }
+    .error {
+      color: red;
+    }
+	#checkPhotos{
+	background-color:green;
+	color:white;
+	}
+  </style>
+</head>
+<body>
+  <h2>Facebook Photo Upload Checker</h2>
+
+  <div class="flex-row">
+    <label for="minDimension">Minimum dimension (L):</label>
+    <input type="number" id="minDimension" />
+  </div>
+
+  <div class="flex-row">
+    <label for="numPhotos">Number of photos (N):</label>
+    <input type="number" id="numPhotos" />
+    <button onclick="generateInputs()">Generate Photo Inputs</button>
+  </div>
+
+  <div id="photoInputs"></div>
+
+  <button onclick="checkPhotos()" id="checkPhotos">Submit Photos</button>
+
+  <h3>Results:</h3>
+  <pre id="output"></pre>
+
+
+
+ <div class="footer-submit">
+  <button class="submit-btn" onclick="window.location.href='main.html'">Back to website</button>
+</div>
+  <script>
+    function generateInputs() {
+      const n = parseInt(document.getElementById("numPhotos").value);
+      const container = document.getElementById("photoInputs");
+      container.innerHTML = "";
+
+      for (let i = 0; i < n; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "photo-input flex-row";
+
+        const label = document.createElement("label");
+        label.textContent = `Photo ${i + 1} (W H):`;
+
+        const input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = "e.g. 640 480";
+        input.id = `photo-${i}`;
+
+        wrapper.appendChild(label);
+        wrapper.appendChild(input);
+        container.appendChild(wrapper);
+      }
+    }
+
+    function checkPhotos() {
+      const L = parseInt(document.getElementById("minDimension").value);
+      const N = parseInt(document.getElementById("numPhotos").value);
+      const output = document.getElementById("output");
+      output.textContent = "";
+
+      for (let i = 0; i < N; i++) {
+        const val = document.getElementById(`photo-${i}`).value.trim();
+        const parts = val.split(" ").filter(Boolean);
+
+       
+        if (parts.length !== 2 || isNaN(parts[0]) || isNaN(parts[1])) {
+          output.textContent += `Photo ${i + 1}: Invalid input! Please enter exactly 2 numbers (W H)\n`;
+          continue;
+        }
+
+        const [W, H] = parts.map(Number);
+
+        if (W < L || H < L) {
+          output.textContent += "UPLOAD ANOTHER\n";
+        } else if (W === H) {
+          output.textContent += "ACCEPTED\n";
+        } else {
+          output.textContent += "CROP IT\n";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
