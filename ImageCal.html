@@ -46,6 +46,11 @@
       font-weight: bold;
       border-radius: 4px;
     }
+	 #photoBG {
+      background-color: green;
+      color: white;
+
+    }
 
     #checkPhotos {
       background-color: green;
@@ -86,6 +91,8 @@
       .photo-input label {
         margin-bottom: 5px;
       }
+	 
+
     }
   </style>
 </head>
@@ -100,7 +107,7 @@
   <div class="flex-row">
     <label for="numPhotos">Number of photos (N):</label>
     <input type="number" id="numPhotos" />
-    <button onclick="generateInputs()">Generate Photo Inputs</button>
+    <button onclick="generateInputs()" id='photoBG'>Generate Photo Inputs W H</button>
   </div>
 
   <div id="photoInputs"></div>
